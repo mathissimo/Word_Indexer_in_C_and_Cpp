@@ -1,0 +1,32 @@
+*** Developer-Portfolio   ***
+*** Mathias Muenscher     *** 
+Student for Applied Informatics, HTW Berlin,
+Diplom-Volkswirt (MSc Econ)
+Email:
+Mathias.Muenscher@gmx.de
+
+*** Program: Word-Indexer (in Ansi-C) ***
+Mission:
+This program reads multiple text-files and generates a sorted indexlist.
+
+Compiling:
+Use C compiler in conjunction with make. If your compiler is not "gcc" then change Code/makefile (line 2). Run make.
+
+Run program:
+Start application with
+iapp <options>+ <output-file> <input-file>+
+
+-> ./iapp indexlist.txt ../Testfiles/Youth.txt 
+
+  Syntax:
+  <options> :
+    -p :				Output to console
+    -w=<n> : 		Minimum characters to get indexed  <output-file> :	Filename of generated indexlist
+  <input-file> : 	Files to index
+
+Testing:
+There is a large multiple-file ebook "Das Schloss" which generates a 12,000+ lines indexlist. You can run iapp on the files with
+-> ./iapp indexlist.txt ../Testfiles/DasSchloss/* 
+
+Documentation:
+Original assignment and code-comments are in German!
